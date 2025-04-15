@@ -7,11 +7,18 @@ public class MainClass {
 
         Student stu3 = new Student(23);
 
+        
+
         stu1.name="Gopan";
         stu1.age=33;
+
+        stu2.printInfo();
         
-        stu2.name="Vikas";
+        stu2.name="VikaS";
         stu2.age=44;
+        stu2.rollCall=2222;
+
+        stu1.printInfo();
 
         stu2.printInfo();  
         stu3.printInfo();    
@@ -35,6 +42,9 @@ public class MainClass {
         System.out.println(this.age);
 
         System.out.println("roll call "+rollCall);
+         
+        System.out.println("-------------");
+        
         
     }
 
