@@ -1,0 +1,40 @@
+public class Thiskey {
+   //static int i=10;
+    //String name="good";
+    
+    
+    public static void main(String args[]){
+
+        int i =2;
+        String n = "inside MAIN method";
+        System.out.println( "inside main method  , i :"+i+" and String n is : "+n);
+
+        ThiskeyEx t = new ThiskeyEx();
+        t.thisEx(n, i);
+
+
+        
+    }
+}
+
+    class ThiskeyEx {
+
+        int i=3;
+        String n ="inside this  EX";
+
+        
+        
+        void thisEx(String n , int i){
+            
+            System.out.println( "inside thisEx CLASS , this.i :"+this.i+" and String this.n is : "+this.n);
+
+            this.n=n;
+            this.i=i;
+            System.out.println( "inside thisEx CLASS , i :"+i+" and String n is : "+n);
+
+        }
+
+
+    }
+    
+
